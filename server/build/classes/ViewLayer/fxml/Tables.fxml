@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import com.gluonhq.charm.glisten.control.CardPane?>
+<?import com.gluonhq.charm.glisten.control.SettingsPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.BubbleChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewLayer.fxml.TablesController">
+   <top>
+      <BorderPane prefHeight="67.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top></BorderPane>
+   </top>
+   <left>
+      <CardPane prefHeight="300.0" prefWidth="248.0" BorderPane.alignment="CENTER">
+         <BorderPane prefHeight="200.0" prefWidth="171.0">
+            <top>
+                <Label prefHeight="52.0" prefWidth="125.0" style="-fx-padding:10;" text="Abdalla Soliman" BorderPane.alignment="CENTER">
+                  <effect>
+                     <Blend opacity="0.74">
+                        <topInput>
+                           <DropShadow height="68.44" radius="62.6275" spread="0.73" width="184.07" />
+                        </topInput>
+                     </Blend>
+                  </effect>
+                  <cursor>
+                     <Cursor fx:constant="TEXT" />
+                  </cursor>
+               </Label>
+            </top>
+            <center>
+               <Avatar disable="true" minHeight="25.0" minWidth="25.0" radius="50.0" BorderPane.alignment="CENTER">
+                  <image>
+                     <Image url="@Salah.jpg" />
+                  </image>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+                  <effect>
+                     <DropShadow />
+                  </effect>
+               </Avatar>
+            </center>
+         </BorderPane>
+         <MenuButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="28.0" prefWidth="235.0" text="DashBoards" textAlignment="CENTER" wrapText="true">
+           <items>
+             <MenuItem mnemonicParsing="false" text="Action 1" />
+             <MenuItem mnemonicParsing="false" text="Action 1" />
+             <MenuItem mnemonicParsing="false" text="Action 2" />
+           </items>
+            <effect>
+               <Blend mode="RED" opacity="0.62">
+                  <bottomInput>
+                     <Glow level="0.0" />
+                  </bottomInput>
+                  <topInput>
+                     <Shadow />
+                  </topInput>
+               </Blend>
+            </effect>
+         </MenuButton>
+         <MenuButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="28.0" prefWidth="234.0" text="Tables" textAlignment="CENTER" wrapText="true">
+           <items>
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <TableView prefHeight="200.0" prefWidth="200.0">
+                             <columns>
+                               <TableColumn prefWidth="75.0" text="C1" />
+                               <TableColumn prefWidth="75.0" text="C2" />
+                             </columns>
+                           </TableView>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <TableView prefHeight="200.0" prefWidth="200.0">
+                              <columns>
+                                 <TableColumn prefWidth="75.0" text="C1">
+                                    <graphic>
+                                       <SettingsPane />
+                                    </graphic>
+                                 </TableColumn>
+                                 <TableColumn prefWidth="75.0" text="C2" />
+                                 <TableColumn prefWidth="75.0" text="C2" />
+                                 <TableColumn prefWidth="75.0" text="C2" />
+                              </columns>
+                           </TableView>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+           </items>
+            <effect>
+               <Blend mode="RED" opacity="0.62">
+                  <bottomInput>
+                     <Glow level="0.0" />
+                  </bottomInput>
+                  <topInput>
+                     <Shadow />
+                  </topInput>
+               </Blend>
+            </effect>
+         </MenuButton>
+         <MenuButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="28.0" prefWidth="282.0" text="Charts" textAlignment="CENTER" wrapText="true">
+           <items>
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                 <items>
+                   <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <AreaChart>
+                             <xAxis>
+                               <CategoryAxis side="BOTTOM" />
+                             </xAxis>
+                             <yAxis>
+                               <NumberAxis side="LEFT" />
+                             </yAxis>
+                           </AreaChart>
+                        </graphic>
+                     </MenuItem>
+                 </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <BarChart>
+                             <xAxis>
+                               <CategoryAxis side="BOTTOM" />
+                             </xAxis>
+                             <yAxis>
+                               <NumberAxis side="LEFT" />
+                             </yAxis>
+                           </BarChart>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <BubbleChart>
+                             <xAxis>
+                               <NumberAxis side="BOTTOM" />
+                             </xAxis>
+                             <yAxis>
+                               <NumberAxis side="LEFT" />
+                             </yAxis>
+                           </BubbleChart>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <LineChart>
+                             <xAxis>
+                               <CategoryAxis side="BOTTOM" />
+                             </xAxis>
+                             <yAxis>
+                               <NumberAxis side="LEFT" />
+                             </yAxis>
+                           </LineChart>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <PieChart />
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <ScatterChart>
+                             <xAxis>
+                               <CategoryAxis side="BOTTOM" />
+                             </xAxis>
+                             <yAxis>
+                               <NumberAxis side="LEFT" />
+                             </yAxis>
+                           </ScatterChart>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <StackedAreaChart>
+                             <xAxis>
+                               <NumberAxis side="BOTTOM" />
+                             </xAxis>
+                             <yAxis>
+                               <NumberAxis side="LEFT" />
+                             </yAxis>
+                           </StackedAreaChart>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+               <Menu mnemonicParsing="false" text="Unspecified Menu">
+                  <items>
+                     <MenuItem mnemonicParsing="false" text="Action 1">
+                        <graphic>
+                           <StackedBarChart>
+                             <xAxis>
+                               <CategoryAxis side="BOTTOM" />
+                             </xAxis>
+                             <yAxis>
+                               <NumberAxis side="LEFT" />
+                             </yAxis>
+                           </StackedBarChart>
+                        </graphic>
+                     </MenuItem>
+                  </items>
+               </Menu>
+               <SeparatorMenuItem mnemonicParsing="false" />
+           </items>
+            <effect>
+               <Blend mode="RED" opacity="0.62">
+                  <bottomInput>
+                     <Glow level="0.0" />
+                  </bottomInput>
+                  <topInput>
+                     <Shadow />
+                  </topInput>
+               </Blend>
+            </effect>
+         </MenuButton>
+         <MenuButton contentDisplay="CENTER" mnemonicParsing="false" prefHeight="28.0" prefWidth="255.0" text="MenuButton" textAlignment="CENTER" wrapText="true">
+           <items>
+             <MenuItem mnemonicParsing="false" text="Action 1">
+                  <graphic>
+                     <TableView prefHeight="200.0" prefWidth="200.0">
+                       <columns>
+                         <TableColumn prefWidth="75.0" text="C1" />
+                         <TableColumn prefWidth="75.0" text="C2" />
+                       </columns>
+                     </TableView>
+                  </graphic>
+               </MenuItem>
+             <MenuItem mnemonicParsing="false" text="Action 2">
+                  <graphic>
+                     <TableView prefHeight="200.0" prefWidth="200.0">
+                       <columns>
+                         <TableColumn prefWidth="75.0" text="C1" />
+                         <TableColumn prefWidth="75.0" text="C2" />
+                       </columns>
+                     </TableView>
+                  </graphic>
+               </MenuItem>
+           </items>
+            <effect>
+               <Blend mode="RED" opacity="0.62">
+                  <bottomInput>
+                     <Glow level="0.0" />
+                  </bottomInput>
+                  <topInput>
+                     <Shadow />
+                  </topInput>
+               </Blend>
+            </effect>
+         </MenuButton>
+      </CardPane>
+   </left>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <right>
+            <AnchorPane prefHeight="731.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane layoutX="90.0" prefHeight="244.0" prefWidth="902.0">
+                     <content>
+                        <TableView fx:id="thirdTable" prefHeight="229.0" prefWidth="937.0" styleClass="thirdTable" stylesheets="@../styles/table.css">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="Email" />
+                              <TableColumn prefWidth="75.0" text="Password" />
+                              <TableColumn prefWidth="75.0" text="Name" />
+                              <TableColumn prefWidth="75.0" text="Gender" />
+                              <TableColumn prefWidth="75.0" text="Gender" />
+                              <TableColumn prefWidth="75.0" text="Image" />
+                              <TableColumn prefWidth="75.0" text="Status" />
+                              <TableColumn prefWidth="75.0" text="City" />
+                              <TableColumn prefWidth="75.0" text="Phone" />
+                              <TableColumn prefWidth="75.0" text="BDate" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane layoutX="91.0" layoutY="496.0" prefHeight="224.0" prefWidth="904.0">
+                     <content>
+                        <TableView fx:id="thirdTable11" prefHeight="222.0" prefWidth="902.0" styleClass="thirdTable" stylesheets="@../styles/table.css">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="Email" />
+                              <TableColumn prefWidth="75.0" text="Password" />
+                              <TableColumn prefWidth="75.0" text="Name" />
+                              <TableColumn prefWidth="75.0" text="Gender" />
+                              <TableColumn prefWidth="75.0" text="Gender" />
+                              <TableColumn prefWidth="75.0" text="Image" />
+                              <TableColumn prefWidth="75.0" text="Status" />
+                              <TableColumn prefWidth="75.0" text="City" />
+                              <TableColumn prefWidth="75.0" text="Phone" />
+                              <TableColumn prefWidth="75.0" text="BDate" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+                  <ScrollPane layoutX="92.0" layoutY="232.0" prefHeight="261.0" prefWidth="901.0">
+                     <content>
+                        <TableView fx:id="thirdTable111" prefHeight="258.0" prefWidth="899.0" styleClass="thirdTable" stylesheets="@../styles/table.css">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="Email" />
+                              <TableColumn prefWidth="75.0" text="Password" />
+                              <TableColumn prefWidth="75.0" text="Name" />
+                              <TableColumn prefWidth="75.0" text="Gender" />
+                              <TableColumn prefWidth="75.0" text="Gender" />
+                              <TableColumn prefWidth="75.0" text="Image" />
+                              <TableColumn prefWidth="75.0" text="Status" />
+                              <TableColumn prefWidth="75.0" text="City" />
+                              <TableColumn prefWidth="75.0" text="Phone" />
+                              <TableColumn prefWidth="75.0" text="BDate" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </center>
+</BorderPane>
