@@ -1,0 +1,2 @@
+	 jan	 feb	 march 	 total
+salary 	100 	200 	300 	=sum(B2:D2)
