@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.msg{
+    -fx-background-color: #015655;
+    -fx-text-fill: white;
+    -fx-font-size: 11pt;
+    -fx-background-radius: 15,15,15;
+    -fx-padding: 15 5 10 5;
+}
+
+
+
+.mymsg{
+    -fx-background-color: #F1F0F0;
+    -fx-text-fill: black;
+    -fx-font-size: 11pt;
+    -fx-background-radius: 15,15,15;
+    -fx-padding: 15 5 10 5;
+}
+
+.sname{
+
+    -fx-text-fill: black;
+    -fx-font-size: 11pt;
+
+}
+
+
+.chatimg{
+    -fx-background-radius: 3,2,1;
+}

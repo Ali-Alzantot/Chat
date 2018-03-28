@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="565.0" style="-fx-background-image: ..\Images\5.png;" stylesheets="@../styles/Myprofile.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userapp.FXMLGroupChatInfoController">
+   <children>
+      <ImageView fx:id="FrImage" fitHeight="127.0" fitWidth="116.0" layoutX="93.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/female-icon-23.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="FrStatues" layoutX="83.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stop Complaining and just do it." textAlignment="CENTER" wrappingWidth="132.00000822544098">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Pane prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: #5b5b5b;">
+         <children>
+            <HBox layoutX="185.0" layoutY="12.0" prefHeight="30.0" prefWidth="200.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Friend Profile" wrappingWidth="159.13671875">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="-10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <HBox layoutX="83.0" layoutY="231.0" prefHeight="35.0" prefWidth="30.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+         <children>
+            <Text fx:id="FrName" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Mayada Saleh " textAlignment="CENTER" wrappingWidth="115.70458984375">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox layoutX="244.0" layoutY="150.0" prefHeight="40.0" prefWidth="322.0">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/20428469_10215964409051231_531885279_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox prefHeight="45.0" prefWidth="263.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <children>
+                  <Text fx:id="FrCity" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="             Alexandria " wrappingWidth="239.13672530651093">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="245.0" layoutY="249.0" prefHeight="40.0" prefWidth="322.0">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/26943601_10215964408891227_291389347_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox prefHeight="45.0" prefWidth="263.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+               <children>
+                  <Text fx:id="FrPhone" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="        01069966666" wrappingWidth="249.13672506809235">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="245.0" layoutY="199.0" prefHeight="40.0" prefWidth="322.0">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/27153188_10215964408771224_1920565688_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox prefHeight="45.0" prefWidth="263.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <children>
+                  <Text fx:id="FrGender" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="              Female" wrappingWidth="246.13671875">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="245.0" layoutY="302.0" prefHeight="40.0" prefWidth="322.0">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/19251281_10215964408811225_571235516_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox prefHeight="45.0" prefWidth="263.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+               <children>
+                  <Text fx:id="FrBDate" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="             9-18-1994" wrappingWidth="251.13673400878906">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="245.0" layoutY="94.0" prefHeight="45.0" prefWidth="335.0">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/26943546_10215964409131233_108420891_n.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <HBox prefHeight="45.0" prefWidth="262.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <children>
+                  <Text fx:id="FrEmail" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="aleh@gmail.com" wrappingWidth="187.13671875">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets left="15.0" right="5.0" />
+               </HBox.margin>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+.menu:hover{
+    -fx-opacity: 0.6;
+    -fx-cursor:hand;
+
+
+}
+.menubar{
+    -fx-background-color:#5b5b5b;
+}
+.menu{
+    -fx-background-color:#00a099;
+    -fx-text-fill: #FFFFFF;
+
+}
+.menuItem{
+    -fx-background-color: #5b5b5b;
+    -fx-text-fill: #5b5b5b !important;
+    -fx-border-image-width: 105px;
+
+}
+.menuItem:hover{
+    -fx-background-color:#00a099;
+}
+.button{
+    -fx-background-color:#00a099;
+    -fx-text-fill: #FFFFFF;
+}
+.button:hover{
+    -fx-opacity: 0.6;
+    -fx-cursor:hand;
+
+
+}
+.text1:hover{
+    -fx-cursor:text;
+
+
+}
+.borderpaneup{
+    -fx-background-color:#5b5b5b;
+
+}
+.label{
+    -fx-text-fill: #FFFFFF;
+}
+.texts{
+
+    -fx-background-insets: 0,1,4,5;
+    -fx-background-radius: 9,8,5,4;
+    -fx-padding: 15 30 15 30;
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 21 px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);
+}
+.hbox{
+    -fx-background-color:#00a099;
+}
+.upperhbox{
+    -fx-background-color: #676767;
+}
+.vbox{
+    -fx-text-fill: #FFF;
+}

@@ -1,0 +1,17 @@
+.button{
+    -fx-background-color:#00a099;
+    -fx-text-fill: #FFFFFF;
+}
+
+.save{
+    -fx-background-color:#18c29c;
+    -fx-text-fill: #FFFFFF;
+}
+.backgroundimg {
+    -fx-background-image: url(../images/7.jpg);
+}
+
+
+
+
+

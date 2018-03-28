@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="userapp.GroupInfoController">
+   <stylesheets>
+      <URL value="@../javaproject/fxmlgroupchatinfo.css" />
+   </stylesheets>
+   <children>
+      <HBox layoutX="15.0" layoutY="76.0" prefHeight="53.0" prefWidth="578.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="203.0" styleClass="button" stylesheets="@../styles/Myprofile.css" text="Group Name:" textFill="#464444">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="gName" prefHeight="30.0" prefWidth="136.0">
+               <HBox.margin>
+                  <Insets left="15.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="106.0" styleClass="button" stylesheets="@../styles/Myprofile.css" text="Group ID" textFill="#464444">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="gpID" prefHeight="31.0" prefWidth="80.0">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="15.0" layoutY="138.0" prefHeight="57.0" prefWidth="578.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="216.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="button" text="Group Members:" wrappingWidth="199.13671875">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </HBox>
+            <ImageView fx:id="addMemberImg" fitHeight="52.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="130.0" />
+               </HBox.margin>
+            </ImageView>
+            <TextField fx:id="addMembergp" focusTraversable="false" onAction="#onEnter" prefHeight="39.0" prefWidth="142.0" promptText="Enter Member Email" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <ScrollPane layoutX="7.0" layoutY="217.0" prefHeight="92.0" prefWidth="635.0">
+         <content>
+            <VBox fx:id="vbContainer" prefHeight="88.0" prefWidth="633.0">
+               <children>
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Pane layoutX="-4.0" prefHeight="66.0" prefWidth="649.0" style="-fx-background-color: #5b5b5b;">
+         <children>
+            <HBox layoutX="184.0" layoutY="12.0" prefHeight="43.0" prefWidth="248.0" styleClass="button" stylesheets="@../styles/Myprofile.css">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Group Information" wrappingWidth="214.13671875">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="-0.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Button fx:id="deleteGroup" layoutX="245.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#deleteGpMethod" prefHeight="56.0" prefWidth="119.0" styleClass="save" stylesheets="@../styles/Myprofile.css" text="Delete" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
